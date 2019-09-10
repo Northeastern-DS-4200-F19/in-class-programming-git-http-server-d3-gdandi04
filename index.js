@@ -6,7 +6,6 @@ var svgHeight = 400
 var barPadding = 10;
 var barWidth = (svgWidth / dataset.length);
 
-
 var svg = d3.select('svg')
     .attr("width", svgWidth)
     .attr("height", svgHeight);
@@ -27,3 +26,4 @@ var barChart = svg.selectAll("rect")
         var translate = [barWidth * i, 0]; 
         return "translate("+ translate +")";
     });
+
